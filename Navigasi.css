@@ -1,0 +1,54 @@
+#header {
+	background-color: maroon;
+}
+
+.linko:link {
+	text-decoration: none;
+	font-size: 16px;
+	color: white;
+	margin-left: 20px;
+}
+
+.linko:visited {
+	color: white;
+}
+
+.linko:hover {
+	color: coral;
+}
+
+.link1:link {
+	text-decoration: none;
+	font-size: 16px;
+	color: white;
+	margin-left: 20px;
+}
+
+.link1:visited {
+	color: white;
+}
+
+.link1:hover {
+	color: coral;
+}
+	
+#link2 {
+	margin-left: 60%;
+	float: right;
+}
+
+.a {
+	text-decoration: none;
+	font-size: 16px;
+	color: white;
+	margin-left: 20px;
+	}
+
+.left{
+	float: left;
+	font-size:100%;
+}
+	
+.right{
+	float:right;
+}
