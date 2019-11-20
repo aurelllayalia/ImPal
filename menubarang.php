@@ -73,3 +73,71 @@
                   <label for="exampleInputPassword1">Nama Barang</label>
                   <input type="text" class="form-control" name="Nama_Barang" value="<?php echo $data['Nama_Barang'] ?>">
                 </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Harga Barang</label>
+                  <input type="text" class="form-control" name="Harga_Barang" value="<?php echo $data['Harga_Barang'] ?>">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Jenis Barang</label>
+                  <input type="text" class="form-control" name="Jenis_Barang" value="<?php echo $data['Jenis_Barang'] ?>">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Jumlah Barang</label>
+                  <input type="text" class="form-control" name="Jumlah_Barang" value="<?php echo $data['Jenis_Barang'] ?>">
+                </div>
+                <button type="submit" name="edit" class="btn btn-primary btn-block">Submit</button>
+                </form>                        
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="del<?php echo $data['ID_Barang'] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Delete Data</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h5 class="modal-title" id="exampleModalLabel">Hapus Barang? <?php echo $data['ID_Barang'] ?> ?</h5>
+              </div>
+              <div class="modal-footer">
+                <form method="POST" action="FunctionUbahBarang.php">
+                  <input type="text" style="display: none;" name="ID_Barang" value="<?php echo $data['ID_Barang'] ?>">
+                  <button type="submit" name="delete" class="btn btn-danger">YA</a>
+                </form>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">TIDAK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <?php
+          $no = $no+1; }
+        ?>
+      </tbody>
+      </table>
+    </div>
+  </div>
+  <script defer src="User/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  <script src="User/js/jquery-3.2.1.min.js"></script>
+  <script src="User/js/jquery.dataTables.min.js"></script>
+  <script src="User/js/popper.min.js"></script>
+  <script src="User/js/bootstrap-4.0.0.js"></script>
+  <script src="User/js/popper.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#example').DataTable({
+        "columns": [
+          { "width": "1%"},
+            null,
+            null,
+            null,
+          { "width": "10%"}
+        ]
+      });
+    } );
+  </script>
+</body>
+</html>
