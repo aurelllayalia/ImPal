@@ -28,3 +28,30 @@
       }
     }
   </script>
+  <center>
+  <form class="" action="FunctionCreateBarang.php" method="POST" enctype="multipart/form-data">
+  <div class="form-group">
+    <label >ID Barang</label>
+    <input type="ID_Barang" class="form-control input-lg" style="width:50%;" " placeholder="Masukkan ID Barang" name="ID_Barang" >
+  </div>
+  <div class="form-group">
+    <label >Nama Barang</label>
+    <input type="Nama_Barang" class="form-control input-lg" style="width:50%;" " placeholder="Masukkan Nama Barang" name="Nama_Barang">
+  </div>
+  <div class="form-group">
+    <label >Harga Barang</label>
+    <input type="Harga_Barang" class="form-control input-lg" style="width:50%;" " placeholder="Masukkan Harga Barang" name="Harga_Barang">
+  </div>
+    <div class="form-group">
+    <label >Jenis Barang</label>
+    <input type="Jenis_Barang" class="form-control input-lg" style="width:50%;" " placeholder="Masukkan Jenis Barang" name="Jenis_Barang">
+  </div>
+    <div class="form-group">
+    <label >Jumlah Barang</label>
+    <input type="Jumlah_Barang" class="form-control input-lg" style="width:50%;" " placeholder="Masukkan Jumlah Barang" name="Jumlah_Barang">
+  </div>
+  <button type="submit" name="TambahBarang"> Tambah </button>
+  <br/>
+  <br/>
+  </form>
+  </center>
