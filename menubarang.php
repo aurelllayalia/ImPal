@@ -69,4 +69,7 @@
                   <input type="text" class="form-control" name="ID_Barang" readonly="readonly" value="<?php echo $data['ID_Barang'] ?>">
                   <input type="text" style="display: none;" name="ID_Barang" value="<?php echo $data['ID_Barang'] ?>">
                 </div>
-        
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Nama Barang</label>
+                  <input type="text" class="form-control" name="Nama_Barang" value="<?php echo $data['Nama_Barang'] ?>">
+                </div>
