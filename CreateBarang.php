@@ -50,6 +50,13 @@
     <label >Jumlah Barang</label>
     <input type="Jumlah_Barang" class="form-control input-lg" style="width:50%;" " placeholder="Masukkan Jumlah Barang" name="Jumlah_Barang">
   </div>
+  <div class="form-group">
+   <label >Foto Barang</label>
+    <input type="Foto_Barang" class="form-control input-lg" style="width:50%;" " placeholder="Masukkan Nama Foto Barang" name="Foto_Barang">
+    <br/>
+    <input type="file" name="fileTo" id="fileToUpload" onchange="readURL(this);">
+    <img id="blah" src="#" alt="" /> 
+  </div>
   <button type="submit" name="TambahBarang"> Tambah </button>
   <br/>
   <br/>
